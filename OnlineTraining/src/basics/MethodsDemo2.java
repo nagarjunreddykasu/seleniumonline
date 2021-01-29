@@ -18,8 +18,7 @@ public class MethodsDemo2 {
 	public static void main(String[] args) {
 		MethodsDemo2 obj=new MethodsDemo2();
 		obj.instanceMethod(10,'K');
-		
-		
+
 		MethodsDemo2.staticMethod(55.75);
 		
 		MethodsDemo2.click("btnSubmit");
