@@ -9,8 +9,12 @@ public class TypeCastingDemo {
 		
 		float f=i;
 		
+		char ch='A'; //ascii value of 'A' is 65
+		int in=ch;
+		
 		System.out.println("int value: "+i);
 		System.out.println("float value: "+f);
+		System.out.println("Char value: "+in);
 		
 		//Narrowing type casting
 		double d=15.75;
