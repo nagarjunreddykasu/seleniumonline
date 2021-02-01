@@ -14,13 +14,13 @@ public class MethodsDemo4 {
 		System.out.println("Int value: "+i);
 	}
 	
-	void method4(long l){
+	void method4(double l){
 		System.out.println("Long value: "+l);
 	}
 	
-	/*void method4(int i){
+	void method4(int i){
 		System.out.println("Integer value: "+i);
-	}*/
+	}
 	
 	
 	public static void main(String[] args) {
@@ -35,3 +35,5 @@ public class MethodsDemo4 {
 	}
 
 }
+
+//byte->short->char->int->long->float->double

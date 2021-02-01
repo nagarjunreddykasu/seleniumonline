@@ -41,3 +41,12 @@ public class TypeCastingDemo {
 		//converting higher data type into lower data type
 
 //double->float->long->int->char->short->byte
+
+
+
+
+
+
+
+
+

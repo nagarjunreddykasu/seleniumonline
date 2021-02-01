@@ -5,8 +5,8 @@ public class MethodsDemo6 {
 	int a=10,b=20;
 	
 	void add(int a, int b){ //local variables
-		System.out.println(a+b);
-		System.out.println(this.a+this.b);
+		System.out.println(a+b);//400
+		System.out.println(this.a+this.b);//30
 	}
 	
 	/*static void addition(int a, int b){
