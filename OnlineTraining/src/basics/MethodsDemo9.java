@@ -14,9 +14,7 @@ public class MethodsDemo9 {
 		MethodsDemo9 obj=new MethodsDemo9();
 		String user=obj.login("Nagarjun");
 		System.out.println("User Name: "+user);
-		
-		
-		
+
 	}
 
 }
