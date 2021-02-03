@@ -21,8 +21,3 @@ public class MethodsDemo13 {
 	}
 
 }
-
-
-//methods with parameters as primitive types
-
-// void method1(Dashboard d)
