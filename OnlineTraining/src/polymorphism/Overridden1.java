@@ -26,6 +26,14 @@ Rules for Method Overriding:
 We can not reduce the scope but increase the scope
 public private protected default
 
+parentmethod 		childmethod
+public				public
+protected			protected/public
+default				default/protected/public
+private --> overriding concept is not applicable for private members
+
+
 */
 
 // public > protected > default > private
+
