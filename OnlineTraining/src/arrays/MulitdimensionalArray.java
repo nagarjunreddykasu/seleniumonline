@@ -27,7 +27,7 @@ public class MulitdimensionalArray {
 			System.out.println();
 		}
 
-		
+		int[][][] arr3=new int[2][3][4];
 		
 	}
 
