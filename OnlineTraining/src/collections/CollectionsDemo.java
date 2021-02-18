@@ -17,11 +17,11 @@ ArrayList	LinkedList	Vector
 
 ArrayList(C):
 ----------
-Heterogenious objects are allowed (different types of data)
+Heterogeneous objects are allowed (different types of data)
 It is possible to insert NULL objects
-Duplicated objects are allowed
+Duplicate objects are allowed
 Insertion order is preserved
-data structure is growable array
+data structure is grow-able array
 We can retrieve the data from ArrayList by using cursors: Iterator and ListIterator
 
 
