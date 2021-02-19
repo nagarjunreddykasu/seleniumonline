@@ -50,8 +50,8 @@ public class ArrayList10 {
 			//System.out.println(litr.next());
 			String str=litr.next();
 			if(str.equals("Vendor7")){
-				litr.remove();
-				//litr.set("VENDOR-7");
+				//litr.remove();
+				litr.set("VENDOR-7");
 			}
 			System.out.println(str);
 		}

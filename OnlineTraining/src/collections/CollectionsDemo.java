@@ -16,7 +16,7 @@ ArrayList	LinkedList	Vector
 
 
 ArrayList(C):
-----------
+-------------
 Heterogeneous objects are allowed (different types of data)
 It is possible to insert NULL objects
 Duplicate objects are allowed
