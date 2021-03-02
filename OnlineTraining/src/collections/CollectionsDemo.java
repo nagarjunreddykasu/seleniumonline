@@ -45,11 +45,7 @@ We can retrieve the data from Vector by using cursors: Enumeration, Iterator and
 
 Set(i):
 ---------
-Heterogeneous objects are allowed (different types of data)
-Duplicate objects are NOT allowed
-It is possible to insert only one NULL object. because duplicate objects are not allowed.
-Insertion order is NOT preserved. but in TreeSet, objects will be retrieved in ascending order.
-We can retrieve the data from Set implemented classes by using cursor: Iterator
+
 
 						Set(i)
 
@@ -58,6 +54,35 @@ HashSet(C)							SortedSet(i)
 LinkedHashSet(C)					NavigableSet(i)
 	
 									TreeSet(C)
+									
+									
+HashSet:
+--------
+Heterogeneous objects are allowed (different types of data)
+Duplicate objects are NOT allowed
+It is possible to insert only one NULL object. because duplicate objects are not allowed.
+Insertion order is NOT preserved.
+We can retrieve the data from Set implemented classes by using cursor: Iterator
+Data structure is HashTable
+
+LinkedHashSet(C):
+-----------------
+LinkedHashSet is child class of HashSet.
+Heterogeneous objects are allowed (different types of data).
+Duplicate objects are NOT allowed.
+It is possible to insert only one NULL object. because duplicate objects are not allowed.
+Insertion order is preserved.
+We can retrieve the data from Set implemented classes by using cursor: Iterator
+Data Structures are LinkedList and HashTable.
+
+TreeSet(C):
+-----------
+Heterogeneous objects are allowed (different types of data).
+Duplicate objects are NOT allowed.
+NULL insertion is NOT possible.
+Insertion order is NOT preserved and it sorts elements in ascending order.
+We can retrieve the data from Set implemented classes by using cursor: Iterator
+Data Structures are LinkedList and HashTable.
 
 
 
