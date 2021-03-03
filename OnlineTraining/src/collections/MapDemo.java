@@ -31,46 +31,7 @@ HashMap allows one null key and multiple null values.
 Insertion order is NOT preserved.
 Data structure is Hashtable.
 
-
-
-
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 Object put(Object key, Object value): It is used to insert an entry in this map.
