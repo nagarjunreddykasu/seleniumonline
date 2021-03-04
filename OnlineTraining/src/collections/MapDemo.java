@@ -1,8 +1,9 @@
 package collections;
 
-public class MapDemo {
-		
 
+public class MapDemo {
+	
+	
 }
 
 
@@ -30,6 +31,15 @@ HashMap does not allow duplicate keys but allows duplicate values.
 HashMap allows one null key and multiple null values.
 Insertion order is NOT preserved.
 Data structure is Hashtable.
+
+
+LinkedHashMap:
+--------------
+HashMap contains values based on Key.
+HashMap does not allow duplicate keys but allows duplicate values.
+HashMap allows one null key and multiple null values.
+Insertion order is preserved.
+Data structures are Hashtable and LinkedList.
 
  */
 
