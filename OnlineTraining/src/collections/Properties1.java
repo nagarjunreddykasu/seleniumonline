@@ -16,6 +16,7 @@ public class Properties1 {
 		System.out.println(p.getProperty("url"));//http://www.facebook.com
 		System.out.println(p.getProperty("username"));
 		System.out.println(p.getProperty("password"));
+		
 	}
 
 }
