@@ -2,8 +2,9 @@ package collections;
 
 
 public class MapDemo {
-	
-	
+	public static void main(String[] args) {
+		
+	}
 }
 
 
@@ -40,6 +41,23 @@ HashMap does not allow duplicate keys but allows duplicate values.
 HashMap allows one null key and multiple null values.
 Insertion order is preserved.
 Data structures are Hashtable and LinkedList.
+
+
+TreeMap():
+---------
+TreeMap contains values based on Key.
+TreeMap does not allow duplicate keys but allows duplicate values.
+TreeMap does not allow null key.
+Insertion order is NOT preserved but it sorts the elements in ascending order based on key.
+Data structure is Hashtable.
+
+Hashtable:
+------------
+Hashtable contains values based on Key.
+Hashtable does not allow duplicate keys but allows duplicate values.
+Hashtable allows one null key and multiple null values.
+Insertion order is NOT preserved.
+Data structure is Hashtable.
 
  */
 
