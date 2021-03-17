@@ -36,7 +36,4 @@ Open https://www.spicejet.com/ site
 Select departure city value and arrival city value
 
 
-
-
-
 */
