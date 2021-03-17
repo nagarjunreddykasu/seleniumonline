@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DatePicker {
 	
-	public static void selectDay(WebDriver driver,String mon,String day) throws InterruptedException{
+	public static void selectDate(WebDriver driver,String mon,String day) throws InterruptedException{
 		while(!driver.findElement(By.cssSelector("[class*='ui-datepicker-group-last'] [class='ui-datepicker-title']")).getText().contains(mon)){   //!false=true !true=false
 			driver.findElement(By.cssSelector(".ui-datepicker-next")).click();
 			Thread.sleep(1000);
@@ -69,7 +69,7 @@ public class DatePicker {
 			}
 		}*/
 		
-		selectDay(driver,"November","25");
+		selectDate(driver,"November","25");
 		
 		
 	}
