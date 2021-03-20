@@ -1,13 +1,18 @@
 package basics;
 
+import java.time.Duration;
+import java.util.NoSuchElementException;
+import java.util.function.Function;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
 public class FluentWaitTest {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		//To Launch the Chrome browser
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -21,7 +26,25 @@ public class FluentWaitTest {
 
 		driver.findElement(By.xpath("//button[contains(text(),'Start')]")).click();
 		
-	//	Wait w=new FluentWait<WebDriver>(driver).withTimeout(timeout)
+		/*Wait<WebDriver> w=new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30)).
+				pollingEvery(Duration.ofSeconds(3)).ignoring(NoSuchElementException.class);
+		
+		w.until(new Function<WebDriver,WebElement>(){
+			public WebElement apply(WebDriver driver){
+				if(driver.findElement(By.cssSelector("[id='finish'] h4")).isDisplayed()){
+					return driver.findElement(By.cssSelector("[id='finish'] h4"));
+				}
+				else
+					return null;
+			}
+		});*/
+		
+		Reusable.flunetWait(driver, By.cssSelector("[id='finish'] h4"));
+		
+		Thread.sleep(5000);
+		
+		
+		System.out.println(driver.findElement(By.cssSelector("[id='finish'] h4")).getText());
 		
 		
 		
