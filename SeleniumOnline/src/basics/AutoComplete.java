@@ -15,9 +15,9 @@ public class AutoComplete {
 		driver.manage().window().maximize();
 
 
-		driver.get("URL");
-		driver.findElement(By.id("TxtEmail")).sendKeys("username");
-		driver.findElement(By.id("TxtPassword")).sendKeys("password");
+		driver.get("http://qa.circulus.io/login.aspx");
+		driver.findElement(By.id("TxtEmail")).sendKeys("nkasu@frontier.com");
+		driver.findElement(By.id("TxtPassword")).sendKeys("xeno@1234");
 		driver.findElement(By.id("BtnLogin")).click();
 		
 		driver.findElement(By.id("cpBody_divqlbillentry")).click();
