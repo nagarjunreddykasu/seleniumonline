@@ -7,20 +7,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class MultipleWindows {
+public class MultipleWindows2 {
 	public static void main(String[] args) throws InterruptedException {
 		//To Launch the Chrome browser
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.get("https://the-internet.herokuapp.com/windows");
+		driver.get("https://www.naukri.com/");
 		String parentId=driver.getWindowHandle();
-		driver.findElement(By.linkText("Click Here")).click();
-		
+		driver.findElement(By.xpath("//*[@id='root']/div[3]/div[3]/div[1]/div[1]/ul/li[1]/a/img")).click();
 		Set<String> handles=driver.getWindowHandles();
-		
-		Iterator<String>itr=handles.iterator();
+		Iterator<String> itr=handles.iterator();
 		while(itr.hasNext()){
 			String childId=itr.next();
 			if(!parentId.equals(childId)){
@@ -29,14 +27,12 @@ public class MultipleWindows {
 			}
 		}
 		
-		String childText=driver.findElement(By.cssSelector(".example")).getText();
-		System.out.println("Child window text: "+childText);
+		String childWindowTitle=driver.getTitle();
+		System.out.println("Child window title: "+childWindowTitle);
 		Thread.sleep(2000);
-		//driver.close();
 		driver.switchTo().window(parentId);
-		String parentText=driver.findElement(By.cssSelector(".example")).getText();
-		System.out.println("Parent window text: "+parentText);
-		//System.out.println(handles);
+		String parentWindowTitle=driver.getTitle();
+		System.out.println("Parent window title: "+parentWindowTitle);
 	}
 
 }
