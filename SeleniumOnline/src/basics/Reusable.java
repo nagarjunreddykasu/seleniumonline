@@ -7,6 +7,7 @@ import java.util.NoSuchElementException;
 import java.util.function.Function;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,6 +28,11 @@ public class Reusable {
 	
 	public static String getText(WebDriver driver, By locator){
 		return driver.findElement(locator).getText();
+	}
+	
+	public static void scroll(WebDriver driver, WebElement element){
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView();", element);
 	}
 	
 	public static ArrayList<WebElement> isDisplayed(ArrayList<WebElement> al){
