@@ -1,5 +1,10 @@
 package basics;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -28,6 +33,16 @@ public class Reusable {
 	
 	public static String getText(WebDriver driver, By locator){
 		return driver.findElement(locator).getText();
+	}
+	
+	public static void uploadRobot(String filePath) throws AWTException{
+		StringSelection sel=new StringSelection(filePath);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel, null);	
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_ENTER);
 	}
 	
 	public static void scroll(WebDriver driver, WebElement element){
