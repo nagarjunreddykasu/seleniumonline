@@ -5,14 +5,19 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.function.Function;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -34,7 +39,13 @@ public class Reusable {
 	public static String getText(WebDriver driver, By locator){
 		return driver.findElement(locator).getText();
 	}
-	
+	public static void takeScreenshot(WebDriver driver) throws IOException{
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		String dest=System.getProperty("user.dir")+"//screenshots//screenshot.png";
+		File destination=new File(dest);
+		FileUtils.copyFile(source,destination);
+	}
 	public static void uploadRobot(String filePath) throws AWTException{
 		StringSelection sel=new StringSelection(filePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel, null);	
@@ -87,6 +98,8 @@ public class Reusable {
 		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
+	
+	
 	
 	public static void flunetWait(WebDriver driver,By locator){
 		Wait<WebDriver> w=new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30)).
