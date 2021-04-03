@@ -20,13 +20,44 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Reusable {
+public static WebDriver driver;
 	
+	public static void launchApp(String browser, String url){
+		if(browser.equalsIgnoreCase("firefox")){
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//drivers//geckodriver.exe");
+			driver = new FirefoxDriver();
+		}else if(browser.equalsIgnoreCase("chrome")){
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//drivers//chromedriver.exe");
+			driver = new ChromeDriver();
+		} else if (browser.equalsIgnoreCase("ie")) {
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "//drivers//IEDriverServer.exe");
+			InternetExplorerOptions options = new InternetExplorerOptions();
+			options.setCapability("ignoreProtectedModeSettings", true);
+			options.setCapability("disable-popup-blocking", true);
+			options.setCapability("ignoreZoomSetting", true);
+			driver = new InternetExplorerDriver(options);
+		}else if (browser.equalsIgnoreCase("edge")) {
+			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "//drivers//msedgedriver.exe");
+			driver = new EdgeDriver();
+		}
+		driver.manage().window().maximize();
+		driver.get(url);
+	}
+	
+	public static WebDriver getDriver(){
+		return driver;
+	}
 	
 	public static void sendKeys(WebDriver driver,By locator,String value){
 		driver.findElement(locator).sendKeys(value);
