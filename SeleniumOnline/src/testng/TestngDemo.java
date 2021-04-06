@@ -7,7 +7,7 @@ public class TestngDemo {
 
 /*
 TestNG:
--------
+--------
 NG Next Generation
 
 Junit
@@ -39,6 +39,39 @@ Hierarchy of Annotations:
 @AfterClass
 @AfterTest
 @AfterSuite
+
+
+
+Parallel Testing:
+------------------
+
+Test cases in parallel
+
+Test classes in parallel
+
+Test suites in parallel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

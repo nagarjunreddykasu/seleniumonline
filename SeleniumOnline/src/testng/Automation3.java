@@ -18,7 +18,7 @@ public class Automation3 {
 	public WebDriver driver;
 
 	@Parameters({"browser","url"})
-	@BeforeMethod
+	@BeforeClass
 	public void beforeClass(String browser,String url) {
 		if(browser.equalsIgnoreCase("firefox")){
 			String exePath = System.getProperty("user.dir") + "//drivers//geckodriver.exe";
