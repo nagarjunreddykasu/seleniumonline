@@ -70,12 +70,13 @@ public static WebDriver driver;
 	public static String getText(WebDriver driver, By locator){
 		return driver.findElement(locator).getText();
 	}
-	public static void takeScreenshot(WebDriver driver) throws IOException{
+	public static String takeScreenshot(WebDriver driver) throws IOException{
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
 		String dest=System.getProperty("user.dir")+"//screenshots//screenshot.png";
 		File destination=new File(dest);
 		FileUtils.copyFile(source,destination);
+		return dest;
 	}
 	public static void uploadRobot(String filePath) throws AWTException{
 		StringSelection sel=new StringSelection(filePath);

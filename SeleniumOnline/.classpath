@@ -45,5 +45,9 @@
 	<classpathentry kind="lib" path="D:/SeleniumOnline/commons-io-2.8.0/commons-io-2.8.0-sources.jar"/>
 	<classpathentry kind="lib" path="D:/SeleniumOnline/commons-io-2.8.0/commons-io-2.8.0-tests.jar"/>
 	<classpathentry kind="lib" path="D:/SeleniumOnline/commons-io-2.8.0/commons-io-2.8.0-test-sources.jar"/>
+	<classpathentry kind="lib" path="D:/SeleniumOnline/extentreports-5.0.7.jar"/>
+	<classpathentry kind="lib" path="D:/SeleniumOnline/freemarker-2.3.31.jar"/>
+	<classpathentry kind="lib" path="D:/SeleniumOnline/reactive-streams-1.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/SeleniumOnline/rxjava-3.0.11.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
