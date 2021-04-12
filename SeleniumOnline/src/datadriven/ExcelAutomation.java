@@ -5,7 +5,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -31,8 +30,6 @@ public class ExcelAutomation {
 			int rowNum=excel.getRowNum("Sheet1", "TC_Login_01");
 			String username=excel.getCellData("Sheet1", "UserName", rowNum);
 			driver.findElement(By.id("TxtEmail")).sendKeys(username);
-			
-			
 		}
 		catch(Exception e){
 			throw new Exception(e.getMessage());
