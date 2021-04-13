@@ -49,5 +49,6 @@
 	<classpathentry kind="lib" path="D:/SeleniumOnline/freemarker-2.3.31.jar"/>
 	<classpathentry kind="lib" path="D:/SeleniumOnline/reactive-streams-1.0.1.jar"/>
 	<classpathentry kind="lib" path="D:/SeleniumOnline/rxjava-3.0.11.jar"/>
+	<classpathentry kind="lib" path="D:/SeleniumOnline/log4j-1.2.17.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -30,6 +30,8 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import datadriven.ExcelReader;
+
 public class Reusable {
 public static WebDriver driver;
 	
@@ -65,6 +67,10 @@ public static WebDriver driver;
 	
 	public static void click(WebDriver driver,By locator){
 		driver.findElement(locator).click();
+	}
+	
+	public static void clear(WebDriver driver,By locator){
+		driver.findElement(locator).clear();
 	}
 	
 	public static String getText(WebDriver driver, By locator){
@@ -146,6 +152,26 @@ public static WebDriver driver;
 					return null;
 			}
 		});
+	}
+	
+	public static String getMethodName() {
+		return new Exception().getStackTrace()[1].getMethodName();
+	}
+	
+	public static boolean isSkip(ExcelReader excel, String sheetName, String testcaseID) {
+		boolean isSkip = false;
+		int rowNumber = excel.getFirstDataRowNum(sheetName, "TCID", testcaseID);
+		String runMode = excel.getCellData(sheetName, "Run", rowNumber);
+		if (runMode.contentEquals("No") || runMode.isEmpty()) {
+			isSkip = true;
+		} else {
+			isSkip = false;
+		}
+		return isSkip;
+	}
+	
+	public static void setResultInExcel(ExcelReader excel, String sheetName, String testcaseID, String result)throws IOException {
+		excel.setCellData(sheetName, testcaseID, "Result", result);
 	}
 
 }
