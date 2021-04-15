@@ -70,6 +70,10 @@ public class Reusable {
 	public static void sendKeys(By locator,String value){
 		driver.findElement(locator).sendKeys(value);
 	}
+	
+	public static void sendKeys(String locator,String value){
+		getWebElement(locator).sendKeys(value);
+	}
 
 	public static void click(By locator){
 		driver.findElement(locator).click();
@@ -82,6 +86,7 @@ public class Reusable {
 	public static void clear(By locator){
 		driver.findElement(locator).clear();
 	}
+	
 
 	public static String getText(By locator){
 		return driver.findElement(locator).getText();
