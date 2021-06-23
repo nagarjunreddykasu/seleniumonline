@@ -74,9 +74,16 @@ public class Reusable {
 	public static void sendKeys(String locator,String value){
 		getWebElement(locator).sendKeys(value);
 	}
+	public static void sendKeys(WebElement element,String value){
+		element.sendKeys(value);
+	}
 
 	public static void click(By locator){
 		driver.findElement(locator).click();
+	}
+	
+	public static void click(WebElement element){
+		element.click();
 	}
 	
 	public static void click(String locator){
@@ -86,10 +93,17 @@ public class Reusable {
 	public static void clear(By locator){
 		driver.findElement(locator).clear();
 	}
+	public static void clear(WebElement element){
+		element.clear();
+	}
 	
 
 	public static String getText(By locator){
 		return driver.findElement(locator).getText();
+	}
+	
+	public static String getText(WebElement element){
+		return element.getText();
 	}
 	
 
@@ -369,6 +383,7 @@ public class Reusable {
 	public static void switchToFrame(String idOrName){
 		driver.switchTo().frame(idOrName);
 	}
+	
 	public static void switchToFrame(WebElement element){
 		driver.switchTo().frame(element);
 	}
@@ -398,14 +413,5 @@ public class Reusable {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
 

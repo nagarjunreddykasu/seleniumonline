@@ -10,6 +10,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import suite.MavenProject.Vendors;
+
 public class ExcelReader {
 	public FileInputStream fis;
 	private XSSFWorkbook workbook;
@@ -167,5 +169,22 @@ public class ExcelReader {
 		fileOutput.close();
 
 	}
+	public ArrayList<Vendors> getVendorExcelData(String sheetName,String colName,String methodName){
+		int rowCount = getRowCount(sheetName,colName,methodName);
+		int colCount =sheet.getRow(0).getLastCellNum();
+		String data[][] = new String[rowCount][colCount];
+		ArrayList<Vendors> vendors=new ArrayList<Vendors>();
+		int firstRow=getFirstDataRowNum(sheetName,colName,methodName);
+		for (int i = 0; i < rowCount; i++) {
+			for (int j = 0; j < colCount; j++) {
+				if(!sheet.getRow(firstRow+i).getCell(j).getStringCellValue().equals(""))
+					data[i][j] =sheet.getRow(firstRow+i).getCell(j).getStringCellValue();		
+				else
+					data[i][j] ="";
+			}
+			vendors.add(new Vendors(data[i][0],data[i][1],data[i][2],data[i][3],data[i][4],data[i][5])); //,data[i][6]
+			}
+		return vendors;
+		}
 
 }

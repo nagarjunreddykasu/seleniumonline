@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Map;
 import org.testng.Assert;
 import org.testng.SkipException;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -185,6 +186,10 @@ public class LoginTest {
 			throw e;
 		}
 
+	}
+	@AfterClass
+	public void afterClass(){
+		Reusable.close();
 	}
 
 
