@@ -1,16 +1,42 @@
-package suite.cucumberproject;
+package definitions;
 
 import java.util.List;
 import java.util.Map;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
+
 //Ctrl+Shift+o
 public class LoginTest {
+	
+	//Hooks -- @Before and @After
+	@Before
+	public void setUp(){
+		System.out.println("setUp method code");
+	}
+	
+	@After
+	public void tearDown(){
+		System.out.println("tearDown method code");
+	}
+	
+	@Before("@sanity")
+	public void setUpSanity(){
+		System.out.println("setUpSanity method code");
+	}
+	
+	@After("@sanity")
+	public void tearDownSanity(){
+		System.out.println("tearDownSanity method code");
+	}
+	
 	@Given("user navigates to QA portal")
 	public void user_navigates_to_qa_portal() {
 		System.out.println("@Given -- user navigates to QA portal");
