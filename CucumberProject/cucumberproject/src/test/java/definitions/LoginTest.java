@@ -27,6 +27,7 @@ public class LoginTest {
 		System.out.println("tearDown method code");
 	}
 	
+	//Tagged Hooks
 	@Before("@sanity")
 	public void setUpSanity(){
 		System.out.println("setUpSanity method code");
