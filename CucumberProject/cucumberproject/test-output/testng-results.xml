@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2596" started-at="2021-06-29T03:22:06Z" finished-at="2021-06-29T03:22:08Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@754ba872]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="2596" started-at="2021-06-29T03:22:06Z" finished-at="2021-06-29T03:22:08Z">
+      <class name="runner.TestNGRunner">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:runner.TestNGRunner@754ba872]" name="beforeSuite" is-config="true" duration-ms="870" started-at="2021-06-29T08:52:05Z" finished-at="2021-06-29T08:52:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestNGRunner@754ba872]" name="setUpClass" is-config="true" duration-ms="1405" started-at="2021-06-29T08:52:06Z" finished-at="2021-06-29T08:52:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@754ba872]" name="runScenario" duration-ms="726" started-at="2021-06-29T08:52:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-29T08:52:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["In order to verify Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@754ba872]" name="runScenario" duration-ms="72" started-at="2021-06-29T08:52:08Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-29T08:52:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["In order to verify Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@754ba872]" name="runScenario" duration-ms="25" started-at="2021-06-29T08:52:08Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-29T08:52:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["In order to verify Sign Up without entering mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign Up]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@754ba872]" name="runScenario" duration-ms="70" started-at="2021-06-29T08:52:08Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-29T08:52:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["In order to verify Sign Up by entering mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign Up]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@754ba872]" name="tearDownClass" is-config="true" duration-ms="248" started-at="2021-06-29T08:52:08Z" finished-at="2021-06-29T08:52:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:runner.TestNGRunner@754ba872]" name="afterSuite" is-config="true" duration-ms="752" started-at="2021-06-29T08:52:08Z" finished-at="2021-06-29T08:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- runner.TestNGRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
