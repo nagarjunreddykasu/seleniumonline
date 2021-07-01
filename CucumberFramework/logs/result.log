@@ -1,0 +1,19 @@
+2021-06-30 08:58:05,515 INFO  [Log] http://qa.circulus.io is launched in chrome browser 
+2021-06-30 08:58:05,536 INFO  [Log] Circulus - Login is matched with Circulus - Login 
+2021-06-30 08:58:05,539 INFO  [Log] user entered  
+2021-06-30 08:58:05,539 INFO  [Log] user entered  
+2021-06-30 08:58:08,111 INFO  [Log] http://qa.circulus.io is launched in chrome browser 
+2021-06-30 08:58:08,120 INFO  [Log] Circulus - Login is matched with Circulus - Login 
+2021-06-30 08:58:08,369 INFO  [Log] user entered nkasu@frontier.com 
+2021-06-30 08:58:08,590 INFO  [Log] user entered xeno@123$ 
+2021-06-30 08:58:15,206 INFO  [Log] Invalid Username / Email Address or Password. is matched with Invalid Username / Email Address or Password. 
+2021-06-30 08:58:17,477 INFO  [Log] http://qa.circulus.io is launched in chrome browser 
+2021-06-30 08:58:17,493 INFO  [Log] Circulus - Login is matched with Circulus - Login 
+2021-06-30 08:58:17,737 INFO  [Log] user entered nkasu@gmail.com 
+2021-06-30 08:58:17,970 INFO  [Log] user entered Test@123 
+2021-06-30 08:58:19,756 INFO  [Log] Invalid Username / Email Address or Password. is matched with Invalid Username / Email Address or Password. 
+2021-06-30 08:58:22,013 INFO  [Log] http://qa.circulus.io is launched in chrome browser 
+2021-06-30 08:58:22,032 INFO  [Log] Circulus - Login is matched with Circulus - Login 
+2021-06-30 08:58:22,250 INFO  [Log] user entered nagarjun 
+2021-06-30 08:58:22,429 INFO  [Log] user entered Abc@321 
+2021-06-30 08:58:22,731 INFO  [Log] Please enter a valid Username / Email Address. is matched with Please enter a valid Username / Email Address. 
