@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34427" started-at="2021-07-05T03:41:00Z" finished-at="2021-07-05T03:41:34Z">
+  <suite name="Default suite" duration-ms="27958" started-at="2021-07-06T03:42:07Z" finished-at="2021-07-06T03:42:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34427" started-at="2021-07-05T03:41:00Z" finished-at="2021-07-05T03:41:34Z">
-      <class name="suite.AndroidTraining.APIDemo">
-        <test-method status="PASS" signature="lauchApp()[pri:0, instance:suite.AndroidTraining.APIDemo@3abbfa04]" name="lauchApp" duration-ms="34363" started-at="2021-07-05T09:11:00Z" finished-at="2021-07-05T09:11:34Z">
+    <test name="Default test" duration-ms="27958" started-at="2021-07-06T03:42:07Z" finished-at="2021-07-06T03:42:35Z">
+      <class name="suite.AndroidTraining.UiSelector1">
+        <test-method status="PASS" signature="UiSelector()[pri:0, instance:suite.AndroidTraining.UiSelector1@6eebc39e]" name="UiSelector" duration-ms="27907" started-at="2021-07-06T09:12:07Z" finished-at="2021-07-06T09:12:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lauchApp -->
-      </class> <!-- suite.AndroidTraining.APIDemo -->
+        </test-method> <!-- UiSelector -->
+      </class> <!-- suite.AndroidTraining.UiSelector1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
