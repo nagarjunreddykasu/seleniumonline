@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27958" started-at="2021-07-06T03:42:07Z" finished-at="2021-07-06T03:42:35Z">
+  <suite name="Default suite" duration-ms="40844" started-at="2021-07-08T03:13:26Z" finished-at="2021-07-08T03:14:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27958" started-at="2021-07-06T03:42:07Z" finished-at="2021-07-06T03:42:35Z">
-      <class name="suite.AndroidTraining.UiSelector1">
-        <test-method status="PASS" signature="UiSelector()[pri:0, instance:suite.AndroidTraining.UiSelector1@6eebc39e]" name="UiSelector" duration-ms="27907" started-at="2021-07-06T09:12:07Z" finished-at="2021-07-06T09:12:35Z">
+    <test name="Default test" duration-ms="40844" started-at="2021-07-08T03:13:26Z" finished-at="2021-07-08T03:14:07Z">
+      <class name="suite.AndroidTraining.ToastMessage">
+        <test-method status="PASS" signature="toastMessage()[pri:0, instance:suite.AndroidTraining.ToastMessage@6eebc39e]" name="toastMessage" duration-ms="40798" started-at="2021-07-08T08:43:26Z" finished-at="2021-07-08T08:44:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UiSelector -->
-      </class> <!-- suite.AndroidTraining.UiSelector1 -->
+        </test-method> <!-- toastMessage -->
+      </class> <!-- suite.AndroidTraining.ToastMessage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
