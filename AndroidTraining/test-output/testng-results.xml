@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40844" started-at="2021-07-08T03:13:26Z" finished-at="2021-07-08T03:14:07Z">
+  <suite name="Default suite" duration-ms="43043" started-at="2021-07-09T03:20:42Z" finished-at="2021-07-09T03:21:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40844" started-at="2021-07-08T03:13:26Z" finished-at="2021-07-08T03:14:07Z">
-      <class name="suite.AndroidTraining.ToastMessage">
-        <test-method status="PASS" signature="toastMessage()[pri:0, instance:suite.AndroidTraining.ToastMessage@6eebc39e]" name="toastMessage" duration-ms="40798" started-at="2021-07-08T08:43:26Z" finished-at="2021-07-08T08:44:07Z">
+    <test name="Default test" duration-ms="43043" started-at="2021-07-09T03:20:42Z" finished-at="2021-07-09T03:21:25Z">
+      <class name="suite.AndroidTraining.SwipeTest">
+        <test-method status="PASS" signature="swipe()[pri:0, instance:suite.AndroidTraining.SwipeTest@3fee9989]" name="swipe" duration-ms="42885" started-at="2021-07-09T08:50:42Z" finished-at="2021-07-09T08:51:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- toastMessage -->
-      </class> <!-- suite.AndroidTraining.ToastMessage -->
+        </test-method> <!-- swipe -->
+      </class> <!-- suite.AndroidTraining.SwipeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="suite.AndroidTraining.UiSelector1">
+      <class name="suite.AndroidTraining.TouchActionTest">
         <methods>
-          <include name="UiSelector"/>
+          <include name="touchactions"/>
         </methods>
-      </class> <!-- suite.AndroidTraining.UiSelector1 -->
+      </class> <!-- suite.AndroidTraining.TouchActionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
