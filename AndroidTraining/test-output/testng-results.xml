@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43043" started-at="2021-07-09T03:20:42Z" finished-at="2021-07-09T03:21:25Z">
+  <suite name="Default suite" duration-ms="66070" started-at="2021-07-12T02:53:39Z" finished-at="2021-07-12T02:54:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43043" started-at="2021-07-09T03:20:42Z" finished-at="2021-07-09T03:21:25Z">
-      <class name="suite.AndroidTraining.SwipeTest">
-        <test-method status="PASS" signature="swipe()[pri:0, instance:suite.AndroidTraining.SwipeTest@3fee9989]" name="swipe" duration-ms="42885" started-at="2021-07-09T08:50:42Z" finished-at="2021-07-09T08:51:25Z">
+    <test name="Default test" duration-ms="66070" started-at="2021-07-12T02:53:39Z" finished-at="2021-07-12T02:54:45Z">
+      <class name="suite.AndroidTraining.WebViewTest">
+        <test-method status="PASS" signature="webView()[pri:0, instance:suite.AndroidTraining.WebViewTest@3abbfa04]" name="webView" duration-ms="66012" started-at="2021-07-12T08:23:39Z" finished-at="2021-07-12T08:24:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- swipe -->
-      </class> <!-- suite.AndroidTraining.SwipeTest -->
+        </test-method> <!-- webView -->
+      </class> <!-- suite.AndroidTraining.WebViewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

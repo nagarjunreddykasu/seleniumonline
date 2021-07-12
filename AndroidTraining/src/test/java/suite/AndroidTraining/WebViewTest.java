@@ -8,14 +8,13 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class WebViewTest {
@@ -33,8 +32,6 @@ public class WebViewTest {
 		cap.setCapability(MobileCapabilityType.NO_RESET, true);
 		cap.setCapability(MobileCapabilityType.FULL_RESET, false);
 		
-		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "10000");
-		
 		AndroidDriver<AndroidElement> driver=new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		
 		Thread.sleep(3000);
@@ -49,9 +46,28 @@ public class WebViewTest {
 		driver.findElement(MobileBy.id("com.androidsample.generalstore:id/btnProceed")).click();
 		Thread.sleep(10000);
 		
+		Set<String> contexts=driver.getContextHandles();
+		for(String contxtName:contexts){
+			System.out.println(contxtName);
+		}
+		
+		//NATIVE_APP
+		//WEBVIEW_com.androidsample.generalstore
+		
+		driver.context("WEBVIEW_com.androidsample.generalstore");
+		driver.findElement(By.name("q")).sendKeys("amazon");
+		Thread.sleep(1000);
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		Thread.sleep(2000);
+		driver.context("NATIVE_APP");
+		Thread.sleep(2000);
+		driver.findElement(MobileBy.id("com.androidsample.generalstore:id/nameField")).sendKeys("Native View");
 		
 		
 		
+		//appium --allow-insecure chromedriver_autodownload
 		
 		
 	}
